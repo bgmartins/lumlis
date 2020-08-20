@@ -24,9 +24,10 @@ p {
 }
 .member-img {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     float: left;
+    border: 10px;
 }
 @media print {
   /* @page { margin-top:1.5cm; margin-bottom:1.5cm; } */
