@@ -27,7 +27,8 @@ p {
     height: 90px;
     width: 90px;
     float: left;
-    padding: 25px 25px 25px 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 @media print {
   /* @page { margin-top:1.5cm; margin-bottom:1.5cm; } */
