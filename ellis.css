@@ -24,8 +24,8 @@ p {
 }
 .member-img {
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 100px;
+    width: 100px;
     float: left;
 }
 @media print {
