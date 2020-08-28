@@ -32,6 +32,8 @@
   <meta name="msapplication-config" content="none"/>
   <!-- include javascript -->
   <script type="text/javascript" src="ellis.js"></script>
+  <script type="text/javascript" src="ellis.js"></script>
+  <script type="text/javascript" src="ellis.js"></script>
   <style type="text/css"></style>
 </head>
 <body class="scroll">
@@ -215,8 +217,21 @@
     <div class="nobreak" style="text-align:center;">
     <!-- <a class="twitter-hashtag-button" data-show-count="false" data-theme="dark" data-width="80%" data-height="600" href="https://twitter.com/intent/tweet?button_hashtag=LUMLIS&ref_src=twsrc%5Etfw">&nbsp;</a> 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-a000bba3-5b46-431f-944b-9b3ac90eed8d"></div>	    
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-a000bba3-5b46-431f-944b-9b3ac90eed8d"></div> -->
+    <script>
+    $('#tweets').tweetie({
+  "url": "https://tweetie.now.sh/api/",
+  "type": "hashtag",
+  "template": "<li>{{tweet.created_at}} - {{tweet.text}}</li>",
+  "dateFormat": "%b %d, %Y",
+  "params": {
+    "count": 15,
+    "q": "#LUMLIS",
+    "include_rts": true
+  }
+});
+    </script>
     </div>
     </section>
 	    
