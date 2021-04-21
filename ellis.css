@@ -17,7 +17,7 @@ b {
 p {
   margin-top:0.5em; margin-bottom:0.5em;
 }
-.nobreak, .person {
+.nobreak, .person, .company {
   -webkit-column-break-inside:avoid;
   page-break-inside:avoid;
   break-inside:avoid;
