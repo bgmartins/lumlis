@@ -29,6 +29,11 @@ p {
     float: right;
     padding: 5px 5px 5px 5px;
 }
+.company-img {
+    height: 90px;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
 @media print {
   /* @page { margin-top:1.5cm; margin-bottom:1.5cm; } */
   body {
