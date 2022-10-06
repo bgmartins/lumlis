@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Lisbon Unit for Learning and Intelligent Systems - LUMLIS</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="LUMLIS, ELLIS, AI, Machine Learning, Instituto Superior Técnico, University of Lisbon, Lisbon, Portugal, Europe">
+  <meta name="author" content="Bruno Martins">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#212121">
+  <!-- include style sheet -->
+  <link rel="stylesheet" media="all" href="ellis.css" />
+  <!-- generic favicons -->
+  <link rel="icon" href="images/lumlis-ellis-r-16.png" sizes="16x16" />
+  <link rel="icon" href="images/lumlis-ellis-r-32.png" sizes="32x32" />
+  <link rel="icon" href="images/lumlis-ellis-r-64.png" sizes="64x64" />
+  <link rel="icon" href="images/lumlis-ellis-r-96.png" sizes="96x96" />
+  <link rel="icon" href="images/lumlis-ellis-r-128.png" sizes="128x128" />
+  <link rel="icon" href="images/lumlis-ellis-r-192.png" sizes="192x192" />
+  <link rel="icon" href="images/lumlis-ellis-r-256.png" sizes="256x256" />
+  <!-- Android (untested) -->
+  <link rel="shortcut icon" sizes="196x196" href="images/lumlis-ellis-r-196.png">
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="images/lumlis-ellis-r-120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="images/lumlis-ellis-r-152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="images/lumlis-ellis-r-180.png" sizes="180x180">
+  <!-- Windows (untested) -->
+  <meta name="msapplication-TileColor" content="#212121"/>
+  <meta name="msapplication-square70x70logo" content="images/lumlis-ellis-r-128.png"/>
+  <meta name="msapplication-square150x150logo" content="images/lumlis-ellis-r-256.png"/>
+  <meta name="msapplication-TileImage" content="images/lumlis-ellis-r-256.png"/>
+  <meta name="msapplication-config" content="none"/>
+  <!-- include javascript -->
+  <script type="text/javascript" src="ellis.js"></script>
+  <script type="text/javascript" src="tweetie.min.js"></script>
+  <style type="text/css"></style>
+</head>
+<body class="scroll">
+  <header class="fixed" style="clear:both;">
+     <div class="colrow">
+       <div class="seg m500-indigo"></div>
+       <div class="seg m500-teal"></div>
+       <div class="seg m500-orange"></div>
+       <div class="seg m500-pink"></div>
+       <div class="seg m500-dpurple"></div>
+     </div>
+     <div class="head">
+       <a href="index.html" style="">LUMLIS - The Lisbon ELLIS Unit</a>
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="people.html" style="">People</a>
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="index.html#structure" style="">Structure</a>
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="index.html#twitter" style="">News</a>	     
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="index.html#events" style="">Events</a>	     
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="companies.html" style="">Corporate Supporters</a>	
+       <span class="dim" style="margin:0 0.25em;">|</span>
+       <a href="index.html#contact" style="">Contact</a>     
+     </div>
+  </header>
+  <main>
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 843.000000 321.000000" style="width:20em; height:auto; float:right;" preserveAspectRatio="xMidYMid meet">
+    <!-- composed to resemble OCRA -->
+    <g transform="translate(0.000000,321.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+    <!-- the "e" -->
+    <path d="M910 2084 c-30 -8 -71 -25 -91 -38 -68 -45 -274 -237 -289 -269 -20
+    -43 -28 -762 -10 -847 26 -116 66 -172 228 -312 81 -71 113 -93 145 -99 23 -5
+    233 -8 467 -9 468 0 468 0 514 63 29 39 29 115 0 154 -46 62 -49 63 -480 63
+    l-390 0 -60 36 c-115 69 -154 124 -154 218 l0 56 498 0 c548 0 539 -1 586 63
+    20 26 21 44 24 249 2 130 -1 241 -8 270 -19 93 -58 155 -156 247 -122 115
+    -179 148 -275 161 -119 15 -484 11 -549 -6z m535 -278 c46 -19 132 -101 156
+    -148 16 -30 19 -59 19 -158 l0 -120 -415 0 -415 0 0 128 c1 81 5 135 13 148
+    18 30 140 142 168 153 13 5 118 10 232 10 159 1 216 -2 242 -13z"
+    class="m500-indigo ellis-e" style="fill:rgb(63,81,181)"/>
+    <!-- first "l" -->
+    <path d="M2310 2673 c-53 -27 -83 -78 -77 -132 6 -52 32 -90 78 -113 28 -15
+    61 -18 187 -18 l152 0 0 -810 0 -810 -152 0 c-126 0 -159 -3 -187 -18 -52 -26
+    -76 -65 -76 -122 0 -57 24 -96 76 -122 31 -16 75 -18 479 -18 490 0 488 0 534
+    63 29 39 29 115 0 154 -40 54 -73 63 -241 63 l-153 0 0 893 c0 829 -1 894 -18
+    926 -9 19 -30 44 -45 55 -27 20 -44 21 -275 24 -220 2 -251 1 -282 -15z"
+    class="m500-teal ellis-l0" style="fill:rgb(0,150,136)"/>
+    <!-- second "l" -->
+    <path d="M3760 2673 c-53 -27 -83 -78 -77 -132 6 -52 32 -90 78 -113 28 -15
+    61 -18 187 -18 l152 0 0 -810 0 -810 -152 0 c-169 0 -202 -9 -242 -63 -29 -39
+    -29 -115 0 -154 46 -63 44 -63 534 -63 490 0 488 0 534 63 29 39 29 115 0 154
+    -40 54 -73 63 -241 63 l-153 0 0 893 c0 829 -1 894 -18 926 -9 19 -30 44 -45
+    55 -27 20 -44 21 -275 24 -220 2 -251 1 -282 -15z"
+    class="m500-orange ellis-l1" style="fill:rgb(255,152,0)"/>
+    <!-- "i" without the dot -->
+    <path d="M5211 2083 c-75 -39 -102 -129 -59 -193 41 -61 73 -70 246 -70 l152
+    0 0 -515 0 -515 -152 0 c-126 0 -159 -3 -187 -18 -52 -26 -76 -65 -76 -122 0
+    -57 24 -96 76 -122 31 -16 75 -18 479 -18 404 0 448 2 479 18 52 26 76 65 76
+    122 0 57 -24 96 -76 122 -28 15 -61 18 -186 18 l-153 0 0 598 c0 659 2 639
+    -63 686 -27 20 -44 21 -275 24 -220 2 -251 1 -281 -15z"
+    class="m500-pink ellis-i" style="fill:rgb(233,30,99)"/>
+    <!-- small "a" on top of the "i" -->
+    <path d="M5547 2813 c-11 -11 -8 -48 5 -61 7 -7 45 -12 99 -12 94 0 99 -3 99
+    -58 l0 -27 -109 3 c-109 4 -109 4 -142 -26 -33 -29 -34 -33 -34 -107 0 -74 1
+    -78 33 -106 30 -27 38 -29 115 -29 63 0 89 4 114 19 31 19 31 19 36 0 7 -25
+    43 -25 57 0 5 11 10 84 10 166 0 223 -17 245 -183 245 -51 0 -97 -3 -100 -7z
+    m184 -243 c31 -17 24 -55 -15 -79 -25 -16 -50 -21 -99 -21 -69 0 -77 6 -77 55
+    0 51 7 55 92 55 44 0 88 -5 99 -10z"
+    class="m500-pink ellis-a" style="fill:rgb(233,30,99)"/>
+    <!-- the "s" -->
+    <path d="M6835 2090 c-94 -23 -196 -105 -244 -195 -23 -44 -26 -61 -26 -145 1
+    -85 4 -102 31 -160 60 -127 50 -120 634 -378 313 -139 357 -161 377 -191 42
+    -62 23 -168 -37 -208 -32 -23 -38 -23 -346 -23 l-313 0 -53 25 c-29 14 -75 40
+    -102 58 -39 25 -60 32 -98 32 -44 0 -53 -4 -83 -37 -36 -39 -51 -91 -40 -135
+    17 -71 173 -176 306 -208 87 -20 678 -22 754 -1 183 49 325 222 325 396 0 180
+    -88 332 -232 402 -31 15 -228 102 -439 193 -211 91 -390 173 -396 182 -21 27
+    -15 72 12 98 l24 25 326 0 c361 0 343 3 430 -69 83 -68 141 -67 212 3 54 55
+    57 91 12 159 -58 89 -154 154 -257 176 -60 12 -727 14 -777 1z"
+    class="m500-dpurple ellis-s" style="fill:rgb(103,58,183)"/>
+    </g>
+    </svg>
+    <div class="nobreak" style="text-align:left;"><h1>Lisbon Unit for Learning and Intelligent Systems</h1></div>
+	
+    <div class="spacer" style="height:2em;"></div>
+	
+    <div class="nobreak" style="text-align:left;">
+    We are pleased to announce the creation of the Lisbon Unit for Learning and Intelligent Systems (LUMLIS), a unit of the
+    <a href="https://ellis.eu/">European Laboratory for Learning and Intelligent Systems</a> (ELLIS), hosted at the <a href="https://tecnico.ulisboa.pt/">Instituto Superior Técnico</a> (IST) of the <a href="https://www.ulisboa.pt">University of Lisbon</a> (UL).</div>
+    
+    <div class="spacer" style="height:2em;"></div>
+	
+    <section id="overview">
+    <div class="nobreak"><h2>The LUMLIS Reading Group @ INESC-ID</h2>
+    This Machine Learning Reading Group meets regularly to discuss research topics on different sub-fields of Machine Learning.</div>
+    </section>
+
+    <div class="spacer" style="height:2em;"></div>
+    
+    <div class="nobreak" style="text-align:center;"><img width="85%" alt="INESC-ID" src="photos/inescid-people.jpg" href="https://www.inesc-id.pt"></div>
+	  
+    <div class="spacer" style="height:2em;"></div>
+
+    <section id="structure">
+    <div class="nobreak"><h2>Reading Group Schedules</h2>
+	
+	<table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Summer Term 2020 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Feb 4</td>
+        <td> Alexandre Borges</td>
+        <td> Deep Residual Learning - <a href="https://arxiv.org/abs/1512.03385"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Feb 11</td>
+        <td> João Monteiro</td>
+        <td> Densely Connected Convolutional Networks - <a href="https://arxiv.org/abs/1608.06993"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Mar 3</td>
+        <td> Tomás Oliveira</td>
+        <td> EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks - <a href="https://arxiv.org/abs/1905.11946"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Apr 7</td>
+        <td> Miguel Freire</td>
+        <td> Playing Atari with Deep Reinforcement Learning - <a href="https://arxiv.org/abs/1312.5602"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Apr 21</td>
+        <td> Arlindo Oliveira</td>
+        <td> ImageNet Classification with Deep Convolutional Meural Networks - <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>May 5</td>
+        <td> Luís Borges</td>
+        <td> Passage Re-ranking with BERT - <a href="https://arxiv.org/abs/1901.04085"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>May 19</td>
+        <td> Rita Ramos</td>
+        <td> Show, Attend and Tell: Neural Image Caption Generation with Visual Attention - <a href="https://arxiv.org/abs/1502.03044"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Jun 2</td>
+        <td> Arlindo Oliveira</td>
+        <td> Generative Adversarial Nets - <a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Jun 16</td>
+        <td> Miguel Monteiro</td>
+        <td> Stochastic Segmentation Networks: Modelling Spatially Correlated Aleatoric Uncertainty - <a href="https://arxiv.org/abs/2006.06015"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Jul 7</td>
+        <td> Dinis Rodrigues</td>
+        <td> Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks - <a href="http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks"> [paper] </a></td>
+    </tr>
+    </table>
+	
+    <br/>
+    <br/>
+	
+    <table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Winter Term 2020 - 2021 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+	<!-- <td style="text-decoration: line-through;">Sep 8</td> -->
+        <td>Sep 8</td> 
+        <td> Inês Filipe</td>
+        <td> Very Deep Convolutional Networks for Large-Scale Image Recognition - <a href="https://arxiv.org/abs/1409.1556"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Sep 22</td>
+        <td> André Godinho</td>
+        <td> Recipes for building an open-domain chatbot - <a href="https://arxiv.org/pdf/2004.13637.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Sep 29</td>
+        <td> André Cavalheiro</td>
+        <td> Recurrent Neural Networks - <a href="http://d2l.ai/chapter_recurrent-neural-networks/index.html"> [book chapter] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td>Oct 6</td>
+        <td> Rita Ramos</td>
+        <td> GradNorm: Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks - <a href="https://arxiv.org/abs/1711.02257"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Oct 13</td>
+        <td> Dinis Rodrigues </td>
+        <td> Automated Stenosis Detection and Classification in X-ray Angiography Using Deep Neural Network - <a href="https://ieeexplore.ieee.org/document/8983033"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Oct 20</td>
+        <td> João Moura </td>
+        <td> Language Models are Few-Shot Learners - <a href="https://arxiv.org/abs/2005.14165"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Oct 27</td>
+        <td> João Monteiro </td>
+        <td> Self-training with Noisy Student improves ImageNet classification - <a href="https://arxiv.org/abs/1911.04252"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Nov 3</td>
+        <td> João Rico </td>
+        <td> Semi-Supervised Classification with Graph Convolutional Networks - <a href="https://arxiv.org/abs/1609.02907"> [paper] </a></td>
+    </tr>	
+    <tr style="background-color:#E6E9EC">
+        <td>Nov 10</td>
+        <td> Pedro Stralen </td>
+        <td> Self-supervised Visual Feature Learning with Deep Neural Networks: A Survey - <a href="https://ieeexplore.ieee.org/document/9086055"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td>Nov 17</td>
+        <td> João Cardoso </td>
+        <td> A Simple Framework for Contrastive Learning of Visual Representations - <a href="https://arxiv.org/abs/2002.05709"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC"> 
+	<td>Nov 24</td>
+        <td> Rafael Pedro </td>
+        <td> Rotate to Attend: Convolutional Triplet Attention Module - <a href="https://arxiv.org/abs/2010.03045"> [paper] </a></td>
+    </tr>
+    <!-- <tr>
+        <td style="border-width: thick; border-color: #36546F;">Dec 8</td>
+        <td> To be announced</td>
+        <td> To be announced - <a href=""> [paper] </a></td>
+    </tr> -->
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Dec 15</td>
+        <td> Tiago Mesquita </td>
+        <td> Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer - <a href="https://arxiv.org/abs/1910.10683"> [paper] </a></td>
+    </tr> 
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Dec 22</td>
+        <td> Mário Cardoso </td>
+        <td> STConvS2S: Spatiotemporal Convolutional Sequence to Sequence Network for Weather Forecasting - <a href="https://arxiv.org/abs/1912.00134"> [paper] </a></td>
+    </tr> 
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Jan 5</td>
+        <td> Susana Vinga </td>
+        <td> Structured sparsity regularization for analyzing high-dimensional omics data - <a href="https://doi.org/10.1093/bib/bbaa122"> [paper] </a></td>
+    </tr> 
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Jan 12</td>
+        <td> Manuel Coimbra </td>
+        <td> Modeling Relational Data with Graph Convolutional Networks - <a href="https://arxiv.org/abs/1703.06103"> [paper] </a></td>
+    </tr> 
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Jan 19</td>
+        <td> Mário Figueiredo </td>
+        <td> The free-energy principle a unified brain theory - <a href="https://www.nature.com/articles/nrn2787"> [paper] </a></td>
+    </tr> 	    
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Jan 26</td>
+        <td> Tiago Oliveira </td>
+        <td> Informed Machine Learning – A Taxonomy and Survey of Integrating Knowledge into Learning Systems - <a href="https://arxiv.org/abs/1903.12394"> [paper] </a></td>
+    </tr> 	    
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Feb 2</td>
+        <td> Daniel Oliveira </td>
+        <td> Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering - <a href="https://arxiv.org/abs/1707.07998"> [paper] </a></td>
+    </tr> 
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Feb 9</td>
+        <td> João Cardoso </td>
+        <td> COVID-19 Deterioration Prediction via Self-Supervised Representation Learning and Multi-Image Prediction - <a href="https://arxiv.org/abs/2101.04909"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Feb 16</td>
+        <td> Mário Cardoso </td>
+        <td> RepVGG: Making VGG-style ConvNets Great Again - <a href="https://arxiv.org/abs/2101.03697"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td style="border-width: thick; border-color: #36546F;">Feb 23</td>
+        <td> João Barata </td>
+        <td> LambdaNetworks: Modeling long-range Interactions without Attention - <a href="https://openreview.net/forum?id=xTJEN-ggl1b"> [paper] </a></td>
+    </tr>
+    </table>
+
+    <br/>
+    <br/>
+	
+    <table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Summer Term 2021 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Mar 2 </td> 
+        <td> Rita Ramos </td>
+        <td> CPTR: Full Transformer Network for Image Captioning - <a href="https://arxiv.org/abs/2101.10804"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Mar 16 </td> 
+        <td> João Lourenço Silva </td>
+        <td> SA-UNet: Spatial Attention U-Net for Retinal Vessel Segmentation - <a href="https://arxiv.org/abs/2004.03696"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Mar 30 </td> 
+        <td> Beatriz Vieira </td>
+        <td> Generative Pretraining from Pixels - <a href="https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Apr 13 </td> 
+        <td> Arlindo Oliveira </td>
+        <td> The Consciousness Prior - <a href="https://arxiv.org/abs/1709.08568"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Apr 27 </td> 
+        <td> Alexandre Borges </td>
+        <td> Combining Off and On-Policy Training in Model-Based Reinforcement Learning - <a href="https://ala2021.vub.ac.be/papers/ALA2021_paper_27.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> May 11 </td> 
+        <td> Nuno Infante </td>
+        <td> CheXpert++: Approximating the CheXpert labeler for Speed, Differentiability, and Probabilistic Output - <a href="https://arxiv.org/abs/2006.15229"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> May 25 </td> 
+        <td> Rita Ramos </td>
+        <td> Unifying Vision-and-Language Tasks via Text Generation - <a href="https://arxiv.org/abs/2102.02779"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> June 22 </td> 
+        <td> João Lourenço Silva </td>
+        <td> Encoder-Decoder Architectures for Clinically Relevant Coronary Artery Segmentation - <a href="https://arxiv.org/abs/2106.11447"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> June 29 </td> 
+        <td> Arlindo Oliveira </td>
+        <td> Modeling the geospatial evolution of COVID-19 using spatio-temporal convolutional sequence-to-sequence neural networks - <a href="https://arxiv.org/abs/2105.02752"> [paper] </a></td>
+    </tr>
+    </table>
+	    
+    <br/>
+    <br/>	    
+	    
+    <table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Winter Term 2021 - 2022 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Sep 21 </td> 
+        <td> Miguel Freire </td>
+        <td> CutPaste: Self-Supervised Learning for Anomaly Detection and Localization - <a href="https://arxiv.org/abs/2104.04015"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Sep 28 </td> 
+        <td> Gonçalo Raposo </td>
+        <td> Efficient Nearest Neighbor Language Models - <a href="https://arxiv.org/abs/2109.04212"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Oct 12 </td> 
+        <td> Rafael Pedro </td>
+        <td> ConViT: Improving Vision Transformers with Soft Convolutional Inductive Biases - <a href="https://arxiv.org/abs/2103.10697"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Oct 19 </td> 
+        <td> Rita Ramos </td>
+        <td> Towards General Purpose Vision Systems - <a href="https://arxiv.org/abs/2104.00743"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Nov 2 </td> 
+        <td> João Lourenço Silva </td>
+        <td> Emerging Properties in Self-Supervised Vision Transformers - <a href="https://arxiv.org/abs/2104.14294"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Nov 9 </td> 
+        <td> Isabel Coutinho </td>
+        <td> "Why Should I Trust You?": Explaining the Predictions of Any Classifier - <a href="https://arxiv.org/abs/1602.04938"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td rowspan="2"> Nov 16 </td> 
+        <td> João Barata </td>
+        <td> Deep Learning for Remote Sensing Image Captioning (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">         
+        <td> Miguel Freire </td>
+        <td> Evaluating generalization in Deep Reinforcement Learning with Procedurally Generated Environments (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td rowspan="2"> Nov 23 </td> 
+        <td> João Silva </td>
+        <td> Deep Convolutional Encoder-Decoder Architectures for Clinically Relevant Coronary Artery Segmentation (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">         
+        <td> Rafael Pedro </td>
+        <td> Improving the Performance of Computer Vision Models with Attention Mechanisms (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td rowspan="2"> Nov 30 </td> 
+        <td> Xavier Araújo </td>
+        <td> A Modular Architecture for Model-Based Deep Reinforcement Learning (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">         
+        <td> Helena Oliveira </td>
+        <td> Deep Learning-based Video Coding: Benchmarking and One Step Forward (M.Sc. thesis)</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Dec 7 </td> 
+        <td> Pedro Mendes </td>
+        <td> HyperJump: Accelerating HyperBand via Risk Modelling - <a href="https://arxiv.org/abs/2108.02479"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Dec 14 </td> 
+        <td> Luís Borges </td>
+        <td> Learning Discrete Representations via Constrained Clustering for Effective and Efficient Dense Retrieval - <a href="https://arxiv.org/pdf/2110.05789.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Jan 11 </td> 
+        <td> José Martinho </td>
+        <td> nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation - <a href="https://www.nature.com/articles/s41592-020-01008-z"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Jan 18 </td> 
+        <td> Gonçalo Oliveira </td>
+        <td> Siamese Neural Networks for One-shot Image Recognition - <a href="https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Jan 25 </td> 
+        <td> Gonçalo Raposo </td>
+        <td> Improving language models by retrieving from trillions of tokens - <a href="https://arxiv.org/abs/2112.04426"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Feb 1 </td> 
+        <td> João Daniel Silva </td>
+        <td> Learning Transferable Visual Models From Natural Language Supervision - <a href="https://arxiv.org/abs/2103.00020"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Feb 8 </td> 
+        <td> Gonçalo Oliveira </td>
+        <td> Attention-based Deep Multiple Instance Learning - <a href="https://arxiv.org/abs/1802.04712"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Feb 15 </td> 
+        <td> Joseph J. Paton </td>
+        <td> Manipulation of striatal population dynamics using temperature warps judgment of time - <a href="https://doi.org/10.1101/2020.08.24.251827"> [paper] </a></td>
+    </tr>
+    </table>
+	    
+    <br/>
+    <br/>	    
+	    
+    <table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Summer Term 2022 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Mar 15 </td> 
+        <td> João Silva </td>
+        <td> A ConvNet for the 2020s - <a href="https://arxiv.org/abs/2201.03545"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Mar 29</td>
+        <td> Bálint Magyar </td>
+        <td> Sanity Checks for Saliency Maps - <a href="https://arxiv.org/abs/1810.03292"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Apr 12</td>
+        <td> Diogo Moura </td>
+        <td> FLAVA: A Foundational Language And Vision Alignment Model - <a href="https://arxiv.org/abs/2112.04482"> [paper] </a></td>
+    </tr>
+    <!-- <tr style="background-color:#E6E9EC">
+        <td> Apr 26</td>
+        <td> Rita Ramos </td>
+	<td> Retrieval-Augmented Image Captioning - <a href="https://openreview.net/pdf?id=rl4ZYeWgGq"> [paper] </a></td>
+    </tr> -->
+    <tr style="background-color:#E6E9EC">
+        <td> May 10</td>
+        <td> Batriz Vieira </td>
+        <td> Using a Siamese Network to Accurately Detect Ischemic Stroke in Computed Tomography Scans - <a href=""> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> May 24</td>
+        <td> Tiago Marques </td>
+        <td> Building integrative systems-level models for neuroscience and artificial intelligence - <a href=""> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Jun 7</td>
+        <td> João Sacramento </td>
+        <td> A contrastive rule for meta-learning - <a href="https://arxiv.org/abs/2104.01677"> [paper] </a></td>
+    </tr>	    	    
+    <tr style="background-color:#E6E9EC">
+        <td> Jun 21 </td>
+        <td> Anderson Rocha </td>
+        <td> Reasoning for Complex Data through Ensemble-based Self-Supervised Learning - <a href="https://arxiv.org/abs/2202.03126"> [paper] </a></td>
+    </tr>	    
+ <!-- <tr>
+        <td style="border-width: thick; border-color: #36546F;">Dec 8</td>
+        <td> To be announced</td>
+        <td> To be announced - <a href=""> [paper] </a></td>
+    </tr> -->
+    </table>
+
+	    
+    <br/>
+    <br/>	    
+	    
+    <table style="width:100%;border: 2px solid #bbb; text-align:left;">
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;" colspan="3">
+	Winter Term 2022 - 2023 <span style="float:right;padding-right:15px">Tuesdays at 1:00 PM</span></td>
+    </tr>
+    <tr>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Date </td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Presenter</td>
+    <td style="text-align:left;background: #36546F;font-size:17px;color:#FDF5E6;">Topic</td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Sep 13 </td> 
+        <td> Tiago Oliveira </td>
+        <td> Revisiting ResNets: Improved Training and Scaling Strategies - <a href="https://arxiv.org/abs/2103.07579"> [paper] </a></td>
+    </tr>
+    <tr style="background-color:#E6E9EC">
+        <td> Sep 20 </td>
+        <td> João Daniel Silva </td>
+        <td> Compositional Attention: Disentangling Search and Retrieval - <a href="https://arxiv.org/abs/2110.09419"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Sep 27 </td>
+        <td> Manuel Blum and Lenore Blum </td>
+        <td> The Conscious Turing Machine: A Framework for a Conscious AI - <a href="https://www.worldscientific.com/doi/abs/10.1142/S2705078521500028"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Oct 4 </td>
+        <td> Luís Borges </td>
+        <td> Text-to-Text Multi-view Learning for Passage Re-ranking - <a href="https://arxiv.org/abs/2104.14133"> [paper] </a></td>
+    </tr>	    
+    <tr style="background-color:#E6E9EC">
+        <td> Oct 11 </td>
+        <td> Miguel Freire </td>
+        <td> High-Resolution Image Synthesis with Latent Diffusion Models - <a href="https://arxiv.org/abs/2112.10752"> [paper] </a></td>
+    </tr>	
+    <tr>
+        <td style="border-width: thick; border-color: #36546F;"> Oct 18 </td>
+        <td> To be announced </td>
+        <td> To be announced - <a href=""> [paper] </a></td>
+    </tr>	
+<!-- <tr>
+        <td style="border-width: thick; border-color: #36546F;">Dec 8</td>
+        <td> To be announced</td>
+        <td> To be announced - <a href=""> [paper] </a></td>
+    </tr> -->
+    </table>	    
+	    
+    </div>
+    </section>
+
+    <div class="spacer" style="height:5em;"></div>
+
+  </main>
+  <footer>
+    <div>LUMLIS - The Lisbon ELLIS Unit <span class="dim">|</span> <a href="https://ellis.eu/">European Laboratory for Learning and Intelligent Systems</a>.</div>
+    <div id="contact" style="opacity:0.75; margin-top:0.75em;">
+       Contact:<br>
+       <li style="display:inline-block; margin-left:2em;"><b>Enquiries</b> – Mário A. T. Figueiredo (mario.figueiredo<span>@</span>tecnico.ulisboa.pt)</li>
+       <li style="display:inline-block; margin-left:2em;"><b>Web &amp; Content</b> – André F. T. Martins (andre.t.martins<span>@</span>tecnico.ulisboa.pt)</li>
+    </div>
+  </footer>
+  <div class="colrow">
+    <div class="seg m500-indigo"></div>
+    <div class="seg m500-teal"></div>
+    <div class="seg m500-orange"></div>
+    <div class="seg m500-pink"></div>
+    <div class="seg m500-dpurple"></div>
+  </div>
+</body>
+</html>
